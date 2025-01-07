@@ -41,9 +41,9 @@ const Quiz = () => {
           <li
             ref={option1}
             className={`border p-3 bg-white/30 rounded-lg cursor-pointer 
-              ${selectedOption === 1 ? 'bg-white/50' : ''}
-              ${selectedOption !== 1 ? 'hover:bg-white/40' : ''}`}
-            onClick={() => checkans(1)}
+              ${selectedOption === 0 ? 'bg-white/50' : ''}
+              ${selectedOption !== 0 ? 'hover:bg-white/40' : ''}`}
+            onClick={() => checkans(0)}
           >
             {question.options[0].text}
           </li>
