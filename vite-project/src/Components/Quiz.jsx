@@ -39,7 +39,7 @@ const Quiz = () => {
             {index + 1}. {question.text}
           </h2>
           <ul className='flex flex-col gap-5'>
-            <li ref={option1} className={`border bg-white/30 backdrop-blur-3xl p-3 rounded-lg cursor-pointer ${selectedOption === 1 ? 'bg-white/50' : ''}`} onClick={(e) => checkans(e, 1)}>
+            <li ref={option1} className={`border p-3 bg-white/30 rounded-lg cursor-pointer ${selectedOption === 2 ? 'bg-white/50' : ''}`} onClick={() => checkans(1)}>
               {question.options[0].text}
             </li>
             <li ref={option2} className={`border p-3 bg-white/30 rounded-lg cursor-pointer ${selectedOption === 2 ? 'bg-white/50' : ''}`} onClick={() => checkans(2)}>
