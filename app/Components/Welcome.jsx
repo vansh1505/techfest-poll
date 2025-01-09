@@ -1,7 +1,7 @@
 function Welcome() {
     return (
       <>
-        <div className="bg-gradient-to-br from-custom-red-1 via-custom-red-4 to-custom-orange-4 h-screen flex justify-center items-center">
+        <div className=" h-screen flex justify-center items-center">
           <div className="text-center">
             <h1 className="text-white text-5xl font-extrabold mb-4 animate-pulse">
               Welcome to TechFest Quiz
