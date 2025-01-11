@@ -20,6 +20,15 @@ const data = [
             { id: 2, text: "April", isCorrect: false },
             { id: 3, text: "May", isCorrect: false },
         ],
+    },
+    {
+        text: " Guess what will be the exciting activities for the galgotias tech conclave?",
+        options: [
+            { id: 0, text: "Hackathons", isCorrect: false },
+            { id: 1, text: "Workshops", isCorrect: false },
+            { id: 2, text: "Robowars", isCorrect: false },
+            { id: 3, text: "All of the above", isCorrect: true },
+        ],
     }
 ];
 
@@ -76,7 +85,7 @@ const Quiz = () => {
                         </li>
                     </ul>
                     <div className='flex justify-center flex-col items-center gap-5'>
-                        {index === 1 ?
+                        {index >= data.length-1 ?
                             <Link href={'/thankyou'}>
                                 <button
                                     onClick={next}
