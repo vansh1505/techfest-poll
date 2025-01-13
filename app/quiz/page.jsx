@@ -13,7 +13,7 @@ const data = [
         ],
     },
     {
-        text: "What will be the month for the Tech-Verse ?",
+        text: "What will be the month for the Tech Conclave ?",
         options: [
             { id: 0, text: "February", isCorrect: true },
             { id: 1, text: "March ", isCorrect: false },
